@@ -1,0 +1,22 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["react-app", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "plugins": ["@typescript-eslint", "react", "prettier", "unused-imports"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "prettier/prettier": ["error", { "printWidth": 100, "tabWidth": 4, "singleQuote": true }],
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": ["warn"],
+    "@typescript-eslint/ban-ts-comment": [
+      "error"
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
