@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 enum AngleComponentDirection {
     HORIZONTAL,
@@ -18,7 +19,9 @@ export const Angle: React.FC = () => {
                     direction={AngleComponentDirection.VERTICAL}
                     className="bg-custom-secondary"
                 />
-                <Logo className="absolute top-24 left-24" src={logo} alt="website logo" />
+                <Link to={'/'} className="pointer-events-auto">
+                    <Logo className="absolute top-12 left-16" src={logo} alt="website logo" />
+                </Link>
             </div>
             <div className="absolute bottom-8 right-8">
                 <AngleComponent
@@ -46,8 +49,8 @@ const AngleComponent = styled.div<AngleComponentProps>`
 `;
 
 const Logo = styled.img`
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
 
     @media (max-width: 768px) {
         display: none;

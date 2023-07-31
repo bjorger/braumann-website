@@ -1,13 +1,18 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaGithub, FaDiagramProject } from 'react-icons/fa6';
 import { AccordionItem } from './AccordionItem';
+import { Link } from 'react-router-dom';
 
 export const Header: React.FC = () => {
     return (
         <div className="absolute top-8 right-8 z-40">
             <AccordionItem
-                icon={<FaDiagramProject fill="#EA7185" size="40px" />}
-                details={'Projects'}
+                icon={
+                    <Link to={'/projects'}>
+                        <FaDiagramProject fill="#EA7185" size="40px" />
+                    </Link>
+                }
+                details={<Link to={'/projects'}>Projects</Link>}
             />
             <AccordionItem
                 icon={

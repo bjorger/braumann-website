@@ -43,6 +43,11 @@ const AccordionText = styled.div<AccordionTextProps>`
     color: white;
     margin-right: 8px;
     -webkit-text-stroke: 0.5px black;
+    display: initial;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const AccordionWrapper = styled.div`

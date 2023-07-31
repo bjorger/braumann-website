@@ -1,10 +1,13 @@
 import React from 'react';
-import { Cloud } from './components/Cloud';
-import { Header } from './components/Header';
-import { Angle } from './components/Angle';
-import { Intro } from './components/Intro';
+import { Cloud } from './Clouds/Cloud';
+import { Header } from './Header';
+import { Angle } from './Angle';
 
-export const App: React.FC = () => {
+interface AppContainerProps {
+    children: React.ReactNode;
+}
+
+export const AppContainer: React.FC<AppContainerProps> = ({ children }) => {
     const [clouds, setClouds] = React.useState<JSX.Element[]>([]);
 
     const calculateDistance = (
@@ -41,13 +44,13 @@ export const App: React.FC = () => {
     };
 
     const generateClouds = (): JSX.Element[] => {
-        const width = window.innerWidth - 100;
-        const height = window.innerHeight - 100;
+        const width = window.innerWidth;
+        const height = window.innerHeight;
         const minDistance = 100; // Adjust this value as needed.
         const positions: { x: number; y: number }[] = [];
         const generatedClouds: JSX.Element[] = [];
 
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 10; i++) {
             const position = generatePosition(width, height, positions, minDistance);
             positions.push(position);
             generatedClouds.push(<Cloud positionX={position.x} positionY={position.y} />);
@@ -66,12 +69,10 @@ export const App: React.FC = () => {
         <div className="max-w-screen max-h-screen overflow-hidden w-screen h-screen bg-custom-primary z-40">
             <Header />
             <Angle />
-            <Intro />
+            {React.Children.toArray(children)}
             <div className="relative w-screen h-screen overflow-hidden z-0 pointer-events-none">
                 {React.Children.toArray(clouds)}
             </div>
         </div>
     );
 };
-
-export default App;

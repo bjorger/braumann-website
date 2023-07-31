@@ -7,15 +7,17 @@ export const Intro: React.FC = () => {
             <StyledHeadline className="text-3xl my-8">Meet Robin Braumann</StyledHeadline>
             <div>
                 <StyledGradientParagraph>
-                    A masterful Web Developer who excels in transforming ideas into dynamic,
-                    user-centric websites. With an extensive skill set spanning front-end
-                    technologies like React and NextJS to back-end solutions using NestJS,{' '}
+                    I am Robin, a seasoned web developer, skilled at turning your ideas into
+                    dynamic, user-oriented websites. My expertise covers a range of technologies
+                    from React and NextJS for front-end development to NestJS for back-end
+                    solutions.
                 </StyledGradientParagraph>
                 <br />
                 <StyledGradientParagraph>
-                    Robin creates immersive web experiences. He's not just a developer, he's a
-                    digital craftsman shaping the web, one site at a time. Invest in quality and
-                    innovation; choose Robin for your web development needs.
+                    By choosing my services, you're opting for quality and innovation. I don't just
+                    code websites; I craft bespoke digital experiences. Trust in my abilities to
+                    create a distinctive online presence tailored to your unique needs. Let's
+                    collaborate to bring your vision to life on the web.
                 </StyledGradientParagraph>
             </div>
         </StyledContainer>
