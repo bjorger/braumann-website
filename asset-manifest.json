@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4183b908.css",
+    "main.js": "/static/js/main.42722ec4.js",
+    "static/js/787.a9880862.chunk.js": "/static/js/787.a9880862.chunk.js",
+    "static/media/logo.png": "/static/media/logo.954eb49e0f6c5e59881d.png",
+    "static/media/days-one-v14-latin-regular.woff2": "/static/media/days-one-v14-latin-regular.5ccc870e454cd406aa7b.woff2",
+    "index.html": "/index.html",
+    "main.4183b908.css.map": "/static/css/main.4183b908.css.map",
+    "main.42722ec4.js.map": "/static/js/main.42722ec4.js.map",
+    "787.a9880862.chunk.js.map": "/static/js/787.a9880862.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4183b908.css",
+    "static/js/main.42722ec4.js"
+  ]
+}
