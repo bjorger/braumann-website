@@ -9,7 +9,7 @@ interface CloudProperties {
 
 export const Cloud: React.FC<CloudProperties> = ({ positionX, positionY }) => {
     return (
-        <Container positionX={positionX} positionY={positionY} className="absolute">
+        <Container x={positionX} y={positionY} className="absolute z-0">
             <CloudSVG />
         </Container>
     );
@@ -17,20 +17,20 @@ export const Cloud: React.FC<CloudProperties> = ({ positionX, positionY }) => {
 
 const moveX = keyframes`
   0%   {transform: translateX(0);}
-  50%  {transform: translateX(300px);}
+  50%  {transform: translateX(500px);}
   100% {transform: translateX(0);}
 `;
 
 interface ContainerProps {
-    positionX?: number;
-    positionY?: number;
+    x?: number;
+    y?: number;
 }
 
 const Container = styled.div<ContainerProps>`
     animation: ${moveX} linear;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    top: ${({ positionY }) => positionY}px;
-    left: ${({ positionX }) => positionX}px;
+    top: ${({ y }) => y}px;
+    left: ${({ x }) => x}px;
 `;

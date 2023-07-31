@@ -15,8 +15,9 @@ module.exports = {
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
-            'custom-primary': '#FECD91',
+            'custom-primary': '#6BADBC',
             'custom-secondary': '#EA7185',
+            white: '#FFFFFF',
         },
     },
     plugins: [],
