@@ -17,6 +17,7 @@ module.exports = {
             current: 'currentColor',
             'custom-primary': '#6BADBC',
             'custom-secondary': '#EA7185',
+            'custom-tertiary': '#FECD91',
             white: '#FFFFFF',
         },
     },

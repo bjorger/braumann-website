@@ -2,6 +2,7 @@
   "name": "robin-homepage",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bjorger.github.io/braumann-website/",
   "dependencies": {
     "@storefront-ui/react": "^2.5.0",
     "@testing-library/jest-dom": "^5.17.0",

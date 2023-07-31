@@ -1,9 +1,14 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaGithub } from 'react-icons/fa6';
+import { FaEnvelope, FaPhone, FaGithub, FaDiagramProject } from 'react-icons/fa6';
 import { AccordionItem } from './AccordionItem';
+
 export const Header: React.FC = () => {
     return (
-        <div className="absolute top-8 right-8 z-50">
+        <div className="absolute top-8 right-8 z-40">
+            <AccordionItem
+                icon={<FaDiagramProject fill="#EA7185" size="40px" />}
+                details={'Projects'}
+            />
             <AccordionItem
                 icon={
                     <a href="mailto:robin.braumann@gmail.com">

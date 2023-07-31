@@ -8,7 +8,7 @@ enum AngleComponentDirection {
 }
 export const Angle: React.FC = () => {
     return (
-        <div className="absolute p-8 w-full h-full z-50 pointer-events-none">
+        <div className="absolute p-8 w-full h-full z-40 pointer-events-none">
             <div>
                 <AngleComponent
                     direction={AngleComponentDirection.HORIZONTAL}

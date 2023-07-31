@@ -1,8 +1,8 @@
 import React from 'react';
-import { Angle } from './components/Angle';
 import { Cloud } from './components/Cloud';
-import { Intro } from './components/Intro';
 import { Header } from './components/Header';
+import { Angle } from './components/Angle';
+import { Intro } from './components/Intro';
 
 export const App: React.FC = () => {
     const [clouds, setClouds] = React.useState<JSX.Element[]>([]);
@@ -63,7 +63,7 @@ export const App: React.FC = () => {
     }, []);
 
     return (
-        <div className="max-w-screen max-h-screen overflow-hidden w-screen h-screen bg-custom-primary">
+        <div className="max-w-screen max-h-screen overflow-hidden w-screen h-screen bg-custom-primary z-40">
             <Header />
             <Angle />
             <Intro />
@@ -75,7 +75,3 @@ export const App: React.FC = () => {
 };
 
 export default App;
-
-//TODO Animated man sitting in headline
-
-//TODO Lead covering text and is "blown away" on page opening

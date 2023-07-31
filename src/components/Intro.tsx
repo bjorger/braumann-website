@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Intro: React.FC = () => {
     return (
-        <StyledContainer className="absolute text-white z-50">
+        <StyledContainer className="absolute text-white z-40">
             <StyledHeadline className="text-3xl my-8">Meet Robin Braumann</StyledHeadline>
             <div>
                 <StyledGradientParagraph>
